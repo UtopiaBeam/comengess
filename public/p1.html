@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta 
+        name='viewport' 
+        content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' 
+   />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        flap1 = () => {
+            fetch("https://us-central1-comengess.cloudfunctions.net/jump?id=1", {
+                mode: "no-cors",
+            })
+            .catch(err =>console.error("err"))
+        }
+    </script>
+</head>
+<body>
+    <button style="width: 200px; height: 200px;" onclick="flap1()">Player 1</button>
+    <button style="width: 200px; height: 200px;" onclick="flap1()">Player 1</button>
+</body>
+</html>
